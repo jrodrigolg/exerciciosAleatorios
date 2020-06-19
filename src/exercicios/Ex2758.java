@@ -25,7 +25,7 @@ public class Ex2758 {
 		System.out.printf("C = %.2f, D = %.2f\n",C,D);
 		System.out.printf("A = %.3f, B = %.3f\n",A,B);
 		System.out.printf("C = %.3f, D = %.3f\n",C,D);
-		System.out.printf("A = %.3E, B = %.3E\n",A,B);
+		System.out.printf("A = %.34.5E, B = %.3E\n",A,B);
 		System.out.printf("C = %.3E, D = %.3E\n",C,D);
 		System.out.printf("A = %.0f, B = %.0f\n",A,B);
 		System.out.printf("C = %.0f, D = %.0f\n",C,D);
