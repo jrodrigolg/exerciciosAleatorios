@@ -17,29 +17,24 @@ public class Ex1124 {
 			if(L==0 && C==0 && R1==0 && R2 ==0) {
 				break;
 			}
-			double teste1 = teste(R1, R2, L);
 			
-			if((2*R1+2*R2)<L || (2*R1+2*R2)<C) {
+			if((2*R1+2*R2)<=L || (2*R1+2*R2)<=C) {
 				System.out.println("S");
 			}
-			else if(teste1<=C){
+			else if(teste(R1, R2, L, C)){
 				System.out.println("S");
 			}
 			else {
 				System.out.println("N");
 			}
-			
-		
-		
-		
 		}
 		sc.close();
 	}
-	public static double teste(int r1,int r2, int l) {
+	public static boolean teste(int r1,int r2, int l, int c) {
 		double x, y;
 		x = l-r1-r2;
 		y = Math.sqrt(Math.pow((r1+r2), 2)-(x*x));
 		y+=r1+r2;
-		return y;
+		return y<=c;
 	}
 }
