@@ -18,7 +18,7 @@ public class Ex1124 {
 				break;
 			}
 			
-			if((2*R1+2*R2)<=L || (2*R1+2*R2)<=C) {
+			if(((2*R1+2*R2)<=L && 2*R1<=C && 2*R2<=C) || ((2*R1+2*R2)<=C && 2*R1<=L && 2*R2<=L)) {
 				System.out.println("S");
 			}
 			else if(teste(R1, R2, L, C)){
@@ -35,6 +35,6 @@ public class Ex1124 {
 		x = l-r1-r2;
 		y = Math.sqrt(Math.pow((r1+r2), 2)-(x*x));
 		y+=r1+r2;
-		return y<=c;
+		return y<=c && 2*r1<=l && 2*r2<=l && 2*r1<=c && 2*r2<=c;
 	}
 }
